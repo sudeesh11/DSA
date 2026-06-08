@@ -23,7 +23,7 @@ int main()
         {
             for (int j = i; j <= n - 1; j++)
             {
-                arr[i] = arr[i + 1];
+                arr[j] = arr[j + 1];
             }
         }
     }
