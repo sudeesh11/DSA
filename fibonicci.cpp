@@ -4,11 +4,11 @@ using namespace std;
 int fibo(int n)
 {
     int a = 0, b = 1, m;
-    if (n == 1)
+    if (n == 0)
     {
         return 0;
     }
-    else if (n == 2)
+    else if (n == 1)
     {
         return 1;
     }
@@ -23,7 +23,7 @@ int main()
     int n;
     cout << "Enter the term up to which you want to display ";
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i <= n; i++)
     {
         cout << fibo(i) << "\t";
     }
