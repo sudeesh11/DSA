@@ -32,6 +32,18 @@ void pop()
     }
 }
 
+void peek()
+{
+    if (top == -1)
+    {
+        cout << "Stack Underflow" << endl;
+    }
+    else
+    {
+        cout << "Top element is " << sta[top] << endl;
+    }
+}
+
 void show()
 {
     cout << "Stack ";
@@ -50,5 +62,6 @@ int main()
     show();
     pop();
     show();
+    peek();
     return 0;
 }
