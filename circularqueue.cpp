@@ -21,6 +21,7 @@ void enqueue(int n)
         }
         rear = (rear + 1) % max;
         que[rear] = n;
+        cout << que[rear] << " added to the queue" << endl;
     }
 }
 
