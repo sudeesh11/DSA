@@ -66,7 +66,7 @@ string infixToPostfix(string infix)
 int main()
 {
     string input;
-    cout << "Enter an expression(for infix to postfix conversion)" << endl;
+    cout << "Enter an expression(for infix to postfix conversion):";
     cin >> input;
     string display = infixToPostfix(input);
     cout << display << endl;

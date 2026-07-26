@@ -36,7 +36,7 @@ string infixToPrefix(string infix)
 
         else if (ch == '(')
         {
-            while (!opStack.empty() && opStack.back() != ')')
+            while ( opStack.back() != ')')
             {
                 output += opStack.back();
                 opStack.pop_back();
@@ -67,7 +67,7 @@ string infixToPrefix(string infix)
 int main()
 {
     string input;
-    cout << "Enter an expression(for infix to prefix conversion)" << endl;
+    cout << "Enter an expression(for infix to prefix conversion):";
     cin >> input;
     string display = infixToPrefix(input);
     cout << display << endl;
