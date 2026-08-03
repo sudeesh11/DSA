@@ -27,7 +27,7 @@ int binarySearch(int arr[], int size, int value)
 
 int main()
 {
-    int arr[20] = {3, 7, 12, 18, 24, 29, 35, 41, 46, 52, 58, 63, 69, 74, 81, 87, 92, 96, 101, 108};
+    int arr[] = {3, 7, 12, 18, 24, 29, 35, 41, 46, 52, 58, 63, 69, 74, 81, 87, 92, 96, 101, 108};
     int size = sizeof(arr) / sizeof(int);
     int value;
     cout << "Enter element to search: ";
