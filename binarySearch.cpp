@@ -5,21 +5,21 @@ int binarySearch(int arr[], int size, int value)
 {
     int low = 0;
     int high = size - 1;
-    int mid = (low + high) / 2;
 
     while (low <= high)
     {
+        int mid = low + (high-low) / 2;
         if (arr[mid] == value)
         {
             return mid;
         }
         else if (arr[mid] < value)
         {
-            mid = low + 1;
+            low= mid+1;
         }
         else
         {
-            mid = low - 1;
+            high = mid - 1;
         }
     }
     return -1;
